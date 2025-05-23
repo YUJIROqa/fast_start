@@ -93,6 +93,13 @@ print(my_dict)
 my_dict.pop('age') #удаление элемента по ключу 'age'
 print(my_dict)
 
+print(my_dict.keys()) #вывод ключей словаря
+print(my_dict.values()) #вывод значений словаря
+print(my_dict.items()) #вывод ключей и значений словаря
+
+
+
+
 
 
 
