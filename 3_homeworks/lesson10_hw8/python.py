@@ -1,5 +1,3 @@
-
-
 def decorator(funk):
 
     def wrapper(first, second):
