@@ -7,7 +7,7 @@ class Group:
     school_name = 42
     director = 'Marivanna'
 
-    def __init__(self, title, pupls_count, group_leader): #
+    def __init__(self, title, pupls_count, group_leader): #определяем индивидуальные характеристики для каждого жэкземпляра
         self.title = title
         self.pupls_count = pupls_count
         self.group_leader = group_leader
@@ -25,7 +25,7 @@ class PrimaryGroup(Group):
     min_age = 6  
     building_section = 'left'
 
-    def __init__(self, title, pupls_count, group_leader, classroom):
+    def __init__(self, title, pupls_count, group_leader, classroom): #добавили классрум
         super().__init__(title, pupls_count, group_leader)
         self.classroom = classroom
     #метод инит нужен что бы создать экземпляр класса с индивидуальными характеристиками

@@ -49,6 +49,7 @@ how_to_make_money = Book('How to make money', 'Ilon Mask', 100, '978-1-5011-2472
 power_of_subconsious = Book('The Power of Subconsious Mind', 'Joseph Murphy', 100, '978-1-5011-2472-7', False)
 
 books = [GOT, rich_father, ilon_mask, how_to_make_money, power_of_subconsious]
+
 for book in books:
     book.is_reg_true()
 
