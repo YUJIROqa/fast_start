@@ -33,7 +33,6 @@ class PrimaryGroup(Group): # класс наследник(наследует в
     def move(self):
         print('run fust')
 
-
 class HightGroup(Group):
     max_age = 18
     min_age = 14

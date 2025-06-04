@@ -123,3 +123,5 @@ sport_car.get_vehicle_type()  # Вывод типа транспортного �
 track_car = Truck('Truck', 'white', 2023)
 track_car.start_engine()      # Запуск двигателя грузовика
 track_car.get_vehicle_type()  # Вывод типа транспортного средства
+
+print(sport_car.wheels)

@@ -181,8 +181,59 @@ new_dict2 = {key: value for key, value in data}
 new_dict3 = dict(data)#только для кортежей
 print(new_dict2)
 
+print('=' * 50)
+import time 
+#1
+def count_time(funk):
 
+    def wrapper():
+        start = time.time()
+        funk()
+        end = time.time()
+        print(f'Time: {end - start}')
+    return wrapper
 
+@count_time
+def fanka():
+    lisst = [x / 3 for x in range(1000000)]
+    print(lisst)
+
+fanka()
+
+#2
+def log_calls(funk):
+
+    def wrapper():
+        print(f'Function {funk.__name__} started')
+        funk()
+        print(f'Function {funk.__name__} finished')
+    return wrapper
+
+@log_calls
+def hello():
+    print('hello')
+
+hello()
+
+#4
+def validaator(funk):
+
+    def wrapper(*args): #*args - значит что мы можем передавать сколько угодно аргументов
+        lissst = []
+        for i in args: #перебираем все аргументы
+            if i < 0:
+                print('Number less than 0')
+                continue
+            else:
+                lissst.append(i)
+        print(lissst)
+    return wrapper
+
+@validaator
+def hello(*args):
+    print(args)
+
+hello(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -1, -2, -3, -4, -5, -6, -7, -8, -9, -10)
 
 
 
