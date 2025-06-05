@@ -13,7 +13,7 @@ def driver():
     yield chrome_driver
 
 
-def test_id_name(driver):
+def test_id_name(driver): #внутрь помещаем фикстуру driver
     input_data = 'Hello'
     driver.get('https://www.qa-practice.com/elements/input/simple')
     #text_field = driver.find_element(By.NAME, 'text_string')
