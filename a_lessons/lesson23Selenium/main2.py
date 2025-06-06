@@ -60,4 +60,7 @@ def test_xpath(driver):
     result_text = driver.find_element(By.XPATH, '//*[@class="result-text"]')
     assert result_text.text == 'Hello'
     
+
+# select_state = driver.find_element(By.XPATH, "//*[text()='Select State']")
+# #//*[text()='Select State'] - найди элемент с текстом Select State
     
