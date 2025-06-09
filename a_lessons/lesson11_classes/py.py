@@ -65,6 +65,7 @@ six_a = MiddleGroup('6a', 25, 'RI')
 print(first_a.pupls_count)
 print(first_a.classroom)
 print(first_b.title)
+print('6a pypls', six_a.pypils)
 
 print(first_a.max_age) #мы смотрим на max_age из класса PrimaryGroup
 print(first_a.school_name) #мы смотрим на school_name из класса Group

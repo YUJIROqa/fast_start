@@ -2,6 +2,29 @@ from selenium import webdriver # импортируем библиотеку sel
 from time import sleep
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+
+# По ID
+#submit-button
+
+# По классу  
+.login-form
+.btn-primary
+
+# По тегу
+button
+input
+div
+
+# По атрибуту
+[name="username"]
+[type="submit"]
+[data-testid="login-btn"]
+
+# По XPath
+//button[@class='submit']
+//input[@name='password']
+//a[contains(text(), 'Войти')]
+
 options = Options() # создаем объект опций. Options() - это класс, который отвечает за настройки браузера.
 
 #options.add_argument('start-maximized') # добавляем опцию для максимизации окна браузера
